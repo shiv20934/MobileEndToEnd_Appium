@@ -1,0 +1,45 @@
+# Created on 2021-05-26T16:29:27.241
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:396)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:386)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+# Created on 2021-05-26T16:29:28.306
+Unexpected IOException: 8,1,com.Dunzo.TestScripts.RegressionTests,driverCreation(com.Dunzo.TestScripts.RegressionTests),null,Connection refused: no further information\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'SHIVPRSI-W10'\002C ip: '192.168.0.107'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '14.0.2'\000ADriver info: driver.version: AndroidDriver,null,Connection refused: no further information\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'SHIVPRSI-W10'\002C ip: '192.168.0.107'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '14.0.2'\000ADriver info: driver.version: AndroidDriver,RegressionTests>mobileDriverConfig.driverCreation:32 \00BB WebDriver Connection re...,org.openqa.selenium.WebDriverException: \000AConnection refused: no further information\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'SHIVPRSI-W10'\002C ip: '192.168.0.107'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '14.0.2'\000ADriver info: driver.version: AndroidDriver\000ACaused by: java.net.ConnectException: Connection refused: no further information\000A
+
+
+# Created on 2021-05-26T16:29:28.308
+Unexpected IOException: 8,1,com.Dunzo.TestScripts.RegressionTests2,driverCreation(com.Dunzo.TestScripts.RegressionTests2),null,Connection refused: no further information\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'SHIVPRSI-W10'\002C ip: '192.168.0.107'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '14.0.2'\000ADriver info: driver.version: AndroidDriver,null,Connection refused: no further information\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'SHIVPRSI-W10'\002C ip: '192.168.0.107'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '14.0.2'\000ADriver info: driver.version: AndroidDriver,RegressionTests2>mobileDriverConfig.driverCreation:32 \00BB WebDriver Connection r...,org.openqa.selenium.WebDriverException: \000AConnection refused: no further information\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'SHIVPRSI-W10'\002C ip: '192.168.0.107'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '14.0.2'\000ADriver info: driver.version: AndroidDriver\000ACaused by: java.net.ConnectException: Connection refused: no further information\000A
+
+
+# Created on 2021-05-26T16:29:28.326
+Unexpected IOException: 5,1,com.Dunzo.TestScripts.RegressionTests2,updateDefaultAddress1(com.Dunzo.TestScripts.RegressionTests2),com.Dunzo.TestScripts.RegressionTests2,null,null
+
+
+# Created on 2021-05-26T16:29:28.327
+Unexpected IOException: 5,1,com.Dunzo.TestScripts.RegressionTests,updateDefaultAddress(com.Dunzo.TestScripts.RegressionTests),com.Dunzo.TestScripts.RegressionTests,null,null
+
+
+# Created on 2021-05-26T16:29:28.329
+Unexpected IOException: 9,1,com.Dunzo.TestScripts.RegressionTests2,updateDefaultAddress1(com.Dunzo.TestScripts.RegressionTests2),null,Connection refused: no further information\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'SHIVPRSI-W10'\002C ip: '192.168.0.107'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '14.0.2'\000ADriver info: driver.version: AndroidDriver,null
+
+
+# Created on 2021-05-26T16:29:28.330
+Unexpected IOException: 9,1,com.Dunzo.TestScripts.RegressionTests,updateDefaultAddress(com.Dunzo.TestScripts.RegressionTests),null,Connection refused: no further information\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'SHIVPRSI-W10'\002C ip: '192.168.0.107'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '14.0.2'\000ADriver info: driver.version: AndroidDriver,null
+
+
+# Created on 2021-05-26T16:29:28.333
+Unexpected IOException: 9,1,com.Dunzo.TestScripts.RegressionTests,tearDown(com.Dunzo.TestScripts.RegressionTests),null,null,null
+
+
+# Created on 2021-05-26T16:29:28.334
+Unexpected IOException: 9,1,com.Dunzo.TestScripts.RegressionTests2,tearDown(com.Dunzo.TestScripts.RegressionTests2),null,null,null
+
+
+# Created on 2021-05-26T16:29:28.496
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGXmlTestSuite,TestSuite,null,null,null
+
+
