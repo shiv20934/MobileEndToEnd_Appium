@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Wed May 26 14:08:23 IST 2021</td>
+<td>Started on:</td><td>Wed May 26 16:19:47 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>20 seconds (20715 ms)</td>
+<tr><td>Total time:</td><td>2 seconds (2436 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,19 +76,13 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.Dunzo.TestScripts.RegressionTests.driverCreation()'><b>driverCreation</b><br>Test class: com.Dunzo.TestScripts.RegressionTests<br>Parameters: emulator-5554, 4723</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20115ms.
+<td><div><pre>org.openqa.selenium.WebDriverException: Connection refused: no further information
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20115ms.
-    at getResponseForW3CError (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:384:37)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:216)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at io.appium.java_client.remote.AppiumCommandExecutor.lambda$6(AppiumCommandExecutor.java:259)
+	at java.base/java.util.Optional.orElseGet(Optional.java:362)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:258)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
@@ -105,43 +99,47 @@ Driver info: driver.version: AndroidDriver
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+	at io.appium.java_client.remote.AppiumCommandExecutor.lambda$1(AppiumCommandExecutor.java:162)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
 	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:193)
-	... 33 more
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20115ms.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20115ms.
-    at getResponseForW3CError (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:384:37)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	... 38 more
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace507215442", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace507215442'><pre>org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20115ms.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20115ms.
-    at getResponseForW3CError (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:384:37)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:216)
 	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	... 31 more
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1438862071", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1438862071'><pre>org.openqa.selenium.WebDriverException: Connection refused: no further information
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.lambda$6(AppiumCommandExecutor.java:259)
+	at java.base/java.util.Optional.orElseGet(Optional.java:362)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:258)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
@@ -173,41 +171,45 @@ Driver info: driver.version: AndroidDriver
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: java.lang.reflect.InvocationTargetException
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+	at io.appium.java_client.remote.AppiumCommandExecutor.lambda$1(AppiumCommandExecutor.java:162)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:193)
-	... 33 more
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20115ms.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20115ms.
-    at getResponseForW3CError (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:384:37)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	... 38 more
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	... 31 more
 </pre></div></td>
-<td>20</td>
+<td>2</td>
 <td>com.Dunzo.TestScripts.RegressionTests@4cc8eb05</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -220,7 +222,7 @@ remote stacktrace: UnknownError: An unknown server-side error occurred while pro
 <tr>
 <td title='com.Dunzo.TestScripts.RegressionTests.tearDown()'><b>tearDown</b><br>Test class: com.Dunzo.TestScripts.RegressionTests</td>
 <td></td>
-<td>-1622018323</td>
+<td>-1622026189</td>
 <td>com.Dunzo.TestScripts.RegressionTests@4cc8eb05</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -232,19 +234,13 @@ remote stacktrace: UnknownError: An unknown server-side error occurred while pro
 </tr>
 <tr>
 <td title='com.Dunzo.TestScripts.RegressionTests.updateDefaultAddress()'><b>updateDefaultAddress</b><br>Test class: com.Dunzo.TestScripts.RegressionTests</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20115ms.
+<td><div><pre>org.openqa.selenium.WebDriverException: Connection refused: no further information
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20115ms.
-    at getResponseForW3CError (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:384:37)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:216)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at io.appium.java_client.remote.AppiumCommandExecutor.lambda$6(AppiumCommandExecutor.java:259)
+	at java.base/java.util.Optional.orElseGet(Optional.java:362)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:258)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
@@ -261,43 +257,47 @@ Driver info: driver.version: AndroidDriver
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+	at io.appium.java_client.remote.AppiumCommandExecutor.lambda$1(AppiumCommandExecutor.java:162)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
 	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:193)
-	... 33 more
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20115ms.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20115ms.
-    at getResponseForW3CError (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:384:37)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	... 38 more
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace406715870", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace406715870'><pre>org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20115ms.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20115ms.
-    at getResponseForW3CError (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:384:37)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:216)
 	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	... 31 more
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace837037308", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace837037308'><pre>org.openqa.selenium.WebDriverException: Connection refused: no further information
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.lambda$6(AppiumCommandExecutor.java:259)
+	at java.base/java.util.Optional.orElseGet(Optional.java:362)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:258)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
@@ -329,39 +329,43 @@ Driver info: driver.version: AndroidDriver
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: java.lang.reflect.InvocationTargetException
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+	at io.appium.java_client.remote.AppiumCommandExecutor.lambda$1(AppiumCommandExecutor.java:162)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:193)
-	... 33 more
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20115ms.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20115ms.
-    at getResponseForW3CError (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:384:37)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	... 38 more
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	... 31 more
 </pre></div></td>
 <td>0</td>
 <td>com.Dunzo.TestScripts.RegressionTests@4cc8eb05</td></tr>

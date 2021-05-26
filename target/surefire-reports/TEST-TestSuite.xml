@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="21.452" tests="6" errors="0" skipped="4" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="2.874" tests="6" errors="0" skipped="4" failures="2">
   <properties>
     <property name="java.specification.version" value="14"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -47,70 +47,42 @@
     <property name="maven.multiModuleProjectDirectory" value="C:\Users\shivprsi\eclipse-workspace\MobileEndToEnd_Appium"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Users\shivprsi\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_14.0.2.v20200815-0932\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/shivprsi/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_14.0.2.v20200815-0932/jre/bin/server;C:/Users/shivprsi/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_14.0.2.v20200815-0932/jre/bin;C:\Python39\Scripts\;C:\Python39\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Sennheiser\SoftphoneSDK\;C:\Program Files\Java\jdk1.8.0_271\bin;C:\Users\shivprsi\AppData\Local\Android\Sdk\tools;C:\Users\shivprsi\AppData\Local\Android\Sdk\platform-tools;C:\Users\shivprsi\AppData\Local\Android\Sdk\build-tools;C:\Users\shivprsi\AppData\Local\Android\Sdk\emulator;C:\Users\shivprsi\AppData\Local\Android\Sdk\tools\bin;C:\Program Files\Android\Android Studio\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\VisualSVN Server\bin;C:\apache-ant-1.9.3\bin;C:\Program Files\apache-maven-3.6.3\bin;C:\Users\shivprsi\AppData\Local\Microsoft\WindowsApps;C:\Users\shivprsi\AppData\Roaming\npm;C:\Users\shivprsi\AppData\Local\GitHubDesktop\bin;C:\Users\shivprsi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\shivprsi\Desktop;;."/>
+    <property name="java.library.path" value="C:\Users\shivprsi\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_14.0.2.v20200815-0932\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/shivprsi/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_14.0.2.v20200815-0932/jre/bin/server;C:/Users/shivprsi/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_14.0.2.v20200815-0932/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python39\Scripts\;C:\Python39\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Sennheiser\SoftphoneSDK\;C:\Program Files\Java\jdk1.8.0_271\bin;C:\Users\shivprsi\AppData\Local\Android\Sdk\tools;C:\Users\shivprsi\AppData\Local\Android\Sdk\platform-tools;C:\Users\shivprsi\AppData\Local\Android\Sdk\build-tools;C:\Users\shivprsi\AppData\Local\Android\Sdk\emulator;C:\Users\shivprsi\AppData\Local\Android\Sdk\tools\bin;C:\Program Files\Android\Android Studio\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\VisualSVN Server\bin;C:\apache-ant-1.9.3\bin;C:\Program Files\apache-maven-3.6.3\bin;C:\Program Files\Git\cmd;C:\Users\shivprsi\AppData\Local\Microsoft\WindowsApps;C:\Users\shivprsi\AppData\Roaming\npm;C:\Users\shivprsi\AppData\Local\GitHubDesktop\bin;C:\Users\shivprsi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Windows\system32;;."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="14.0.2+12-46"/>
-    <property name="classworlds.conf" value="C:\Users\shivprsi\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf9305966152322468182.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\shivprsi\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf12443122333499228196.tmp"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="58.0"/>
   </properties>
-  <testcase name="driverCreation" classname="com.Dunzo.TestScripts.RegressionTests" time="20.966">
-    <failure message="Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20115ms.&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;&#10;Driver info: driver.version: AndroidDriver&#10;remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20115ms.&#10;    at getResponseForW3CError (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)&#10;    at asyncHandler (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:384:37)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;&#10;Driver info: driver.version: AndroidDriver" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
-Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20115ms.
+  <testcase name="driverCreation" classname="com.Dunzo.TestScripts.RegressionTests2" time="2.684">
+    <failure message="Connection refused: no further information&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;&#10;Driver info: driver.version: AndroidDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Connection refused: no further information
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'SHIVPRSI-W10', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20115ms.
-    at getResponseForW3CError (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:384:37)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SHIVPRSI-W10', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: driver.version: AndroidDriver
-Caused by: java.lang.reflect.InvocationTargetException
-Caused by: org.openqa.selenium.WebDriverException: 
-An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20115ms.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SHIVPRSI-W10', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20115ms.
-    at getResponseForW3CError (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:384:37)
+Caused by: java.net.ConnectException: Connection refused: no further information
 </failure>
   </testcase>
-  <testcase name="driverCreation" classname="com.Dunzo.TestScripts.RegressionTests2" time="21.001">
-    <failure message="Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20122ms.&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;&#10;Driver info: driver.version: AndroidDriver&#10;remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20122ms.&#10;    at getResponseForW3CError (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)&#10;    at asyncHandler (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:384:37)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;&#10;Driver info: driver.version: AndroidDriver" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
-Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20122ms.
+  <testcase name="driverCreation" classname="com.Dunzo.TestScripts.RegressionTests" time="2.685">
+    <failure message="Connection refused: no further information&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;&#10;Driver info: driver.version: AndroidDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Connection refused: no further information
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'SHIVPRSI-W10', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20122ms.
-    at getResponseForW3CError (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:384:37)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SHIVPRSI-W10', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: driver.version: AndroidDriver
-Caused by: java.lang.reflect.InvocationTargetException
-Caused by: org.openqa.selenium.WebDriverException: 
-An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20122ms.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SHIVPRSI-W10', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20122ms.
-    at getResponseForW3CError (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:384:37)
+Caused by: java.net.ConnectException: Connection refused: no further information
 </failure>
-  </testcase>
-  <testcase name="updateDefaultAddress1" classname="com.Dunzo.TestScripts.RegressionTests2" time="0">
-    <skipped message="Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20122ms.&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;&#10;Driver info: driver.version: AndroidDriver&#10;remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20122ms.&#10;    at getResponseForW3CError (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)&#10;    at asyncHandler (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:384:37)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;&#10;Driver info: driver.version: AndroidDriver"/>
   </testcase>
   <testcase name="updateDefaultAddress" classname="com.Dunzo.TestScripts.RegressionTests" time="0">
-    <skipped message="Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20115ms.&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;&#10;Driver info: driver.version: AndroidDriver&#10;remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20115ms.&#10;    at getResponseForW3CError (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)&#10;    at asyncHandler (C:\Users\shivprsi\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:384:37)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;&#10;Driver info: driver.version: AndroidDriver"/>
+    <skipped message="Connection refused: no further information&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;&#10;Driver info: driver.version: AndroidDriver"/>
   </testcase>
-  <testcase name="tearDown" classname="com.Dunzo.TestScripts.RegressionTests2" time="0">
-    <skipped/>
+  <testcase name="updateDefaultAddress1" classname="com.Dunzo.TestScripts.RegressionTests2" time="0">
+    <skipped message="Connection refused: no further information&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SHIVPRSI-W10&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;&#10;Driver info: driver.version: AndroidDriver"/>
   </testcase>
   <testcase name="tearDown" classname="com.Dunzo.TestScripts.RegressionTests" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.Dunzo.TestScripts.RegressionTests2" time="0">
     <skipped/>
   </testcase>
 </testsuite>
